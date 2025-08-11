@@ -13,5 +13,8 @@ unsafe_code = "forbid"
 [dependencies]
 # -- Docx
 markdownify = "0.2.1"
+# -- Low level libs
+zip = "3.0.0"
+quick-xml = "0.37.4"
 # -- Others
 derive_more = { version = "2", features = ["from", "display"] }
