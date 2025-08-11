@@ -13,7 +13,7 @@ unsafe_code = "forbid"
 [dependencies]
 # -- Docx
 markdownify = "0.2.1"
-# -- Low level libs
+# -- Low level libs (needs to match markdownify for this xp)
 zip = "3.0.0"
 quick-xml = "0.37.4"
 # -- Others
