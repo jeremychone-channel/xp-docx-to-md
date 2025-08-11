@@ -11,5 +11,7 @@ unsafe_code = "forbid"
 # unused = { level = "allow", priority = -1 } # For exploratory dev.
 
 [dependencies]
+# -- Docx
+markdownify = "0.2.1"
 # -- Others
 derive_more = { version = "2", features = ["from", "display"] }
