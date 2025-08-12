@@ -176,10 +176,8 @@ pub fn docx_convert(path: &Path) -> Result<String, Box<dyn std::error::Error>> {
 					continue;
 				}
 				if styles.indent > 0 {
-					println!("->> {}", styles.indent);
 					let indent_num = styles.indent.saturating_sub(1);
 					let indent = "  ".repeat(indent_num as usize);
-					println!("->> {} - -{}-", indent_num, indent);
 					markdown.push_str(&format!("{}- {}", indent, text));
 					styles.indent = -1;
 					continue;
